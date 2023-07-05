@@ -3,7 +3,7 @@ import "./FicheTitle.sass";
 
 function FicheTitle({ title, location }) {
   return (
-    <div className="fiche__title">
+    <div className="titleLocation">
       <h3>{title}</h3>
       <p>{location}</p>
     </div>

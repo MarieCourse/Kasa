@@ -1,14 +1,14 @@
 import "./Card.sass";
+import { Link } from "react-router-dom";
 
 function Card({ id, title, cover }) {
-  const handleClick = () => {
-    window.location.href = `/fiches/${id}`;
-  };
   return (
-    <div className="logementCard" onClick={handleClick}>
-      <h2>{title}</h2>
-      <img src={cover} alt={title} />
-    </div>
+    <Link to={`/fiches/${id}`}>
+      <div className="logementCard">
+        <h2>{title}</h2>
+        <img src={cover} alt={title} />
+      </div>
+    </Link>
   );
 }
 
