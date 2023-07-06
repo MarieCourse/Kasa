@@ -6,9 +6,8 @@ import FicheTitle from "../../components/FicheTitle/FicheTitle";
 import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
-import Description from "../../components/Description/Description";
-import Equipements from "../../components/Equipements/Equipements";
 import "./fiche-logement.sass";
+import Informations from "../../components/Informations/Informations";
 
 function FicheLogement() {
   // Recuperation de l'id sur la URL
@@ -40,10 +39,7 @@ function FicheLogement() {
           <Rating rating={rating} />
         </div>
       </div>
-      <div className="fiche__section2">
-        <Description description={description} />
-        <Equipements equipments={equipments} />
-      </div>
+      <Informations description={description} equipments={equipments} />
     </div>
   );
 }
