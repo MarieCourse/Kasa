@@ -7,7 +7,7 @@ import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
 import "./fiche-logement.sass";
-import Informations from "../../components/Informations/Informations";
+import Deroulant from "../../components/Deroulant/Deroulant";
 
 function FicheLogement() {
   // Recuperation de l'id sur la URL
@@ -39,7 +39,10 @@ function FicheLogement() {
           <Rating rating={rating} />
         </div>
       </div>
-      <Informations description={description} equipments={equipments} />
+      <div className="informations">
+        <Deroulant title="Description" content={description} />
+        <Deroulant title="Équipements" content={equipments} />
+      </div>
     </div>
   );
 }

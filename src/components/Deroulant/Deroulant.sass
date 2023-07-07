@@ -1,13 +1,12 @@
 .deroulant
     width: 50%
-    background-color: #F6F6F6
     border-radius: 10px
 
-    h4, p
+    h4, p, ul
         margin: 0
         font-weight: 400
-    h4
         width: 100%
+    h4
         color: white
         background-color: #FF6060
         border-radius: 10px
@@ -16,19 +15,28 @@
         text-align: left
         line-height: 20px
 
-    p
-        color: #FF6060
-        padding: 10px
-        line-height: 1.5
-        position: fixed
-        right: -100vw
+    p, ul
+        width: calc(100% - 40px)
+        right: -100%
         visibility: hidden
+        // transition: right 0.3s ease
+        max-height: 0
+        transition: max-height 0.8s ease-in-out
 
     .showContent
+        color: #FF6060
+        line-height: 1.5
+        padding: 20px
+        border-radius: 0 0 10px 10px
+        background-color: #F6F6F6
         right: 0
-        width: 100vw
         visibility: visible
-    div
+        color: #FF6060
+        line-height: 1.5
+        max-height: 500px
+        transition: max-height 0.8s ease-in-out
+
+    > div
         display: flex
         flex-direction: row
         position: relative
@@ -40,4 +48,8 @@
         border: none
         cursor: pointer
         position: absolute
-        left: 92%
+        left: 90%
+        transition: transform 0.3s ease-in-out
+
+        .rotated
+            transform: rotate(180deg)

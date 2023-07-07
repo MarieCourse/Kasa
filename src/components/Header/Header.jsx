@@ -11,7 +11,7 @@ function Header() {
           Accueil
         </Link>
         <Link to="/About" className="header__nav__link">
-          A propos
+          A Propos
         </Link>
       </nav>
     </div>
