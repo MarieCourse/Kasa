@@ -1,6 +1,8 @@
 import React from "react";
 import "./Deroulant.sass";
-import { ReactComponent as ArrowUp } from "../../assets/arrowUp.svg";
+import arrowUp from "../../assets/arrowUp.svg";
+import arrowDown from "../../assets/arrowDown.svg";
+
 import { useState } from "react";
 
 function Deroulant({ title, content }) {
@@ -18,11 +20,12 @@ function Deroulant({ title, content }) {
     <div className="deroulant">
       <div>
         <h4>{title}</h4>
-        <button
-          className={`${rotated ? "rotated" : ""}`}
-          onClick={handleShowContent}
-        >
-          <ArrowUp />
+        <button onClick={handleShowContent}>
+          {open ? (
+            <img src={arrowDown} alt="" className="img-button" />
+          ) : (
+            <img src={arrowUp} alt="" className="img-button" />
+          )}
         </button>
       </div>
       {typeof content === "object" ? (

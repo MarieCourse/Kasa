@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner/Banner";
+import "./about.sass";
 import valeurs from "../../datas/valeurs.json";
 
 import bannerImageSource from "../../assets/image banner 2.jpg";
@@ -9,7 +10,7 @@ const texteParagraph = "";
 
 function About() {
   return (
-    <div>
+    <div className="pages__body">
       <Banner
         imgSrc={bannerImageSource}
         altText={imageAltText}

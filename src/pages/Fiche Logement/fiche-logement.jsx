@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import logementsData from "../../datas/logements.json";
-import Carrousel from "../../components/Carrousel/Carrousel";
+import Carousel from "../../components/Carousel/Carousel";
 import FicheTitle from "../../components/FicheTitle/FicheTitle";
 import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
@@ -27,8 +27,8 @@ function FicheLogement() {
   } = selectedLogement;
 
   return (
-    <div key={id}>
-      <Carrousel pictures={pictures} />
+    <div className="pages__body" key={id}>
+      <Carousel pictures={pictures} />
       <div className="fiche__section1">
         <div className="fiche__section1A">
           <FicheTitle title={title} location={location} />
@@ -40,8 +40,12 @@ function FicheLogement() {
         </div>
       </div>
       <div className="informations">
-        <Deroulant title="Description" content={description} />
-        <Deroulant title="Équipements" content={equipments} />
+        <div>
+          <Deroulant title="Description" content={description} />
+        </div>
+        <div>
+          <Deroulant title="Équipements" content={equipments} />
+        </div>
       </div>
     </div>
   );
