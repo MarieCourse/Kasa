@@ -10,13 +10,13 @@ const texteParagraph = "";
 
 function About() {
   return (
-    <div className="pages__body">
+    <div className="main">
       <Banner
         imgSrc={bannerImageSource}
         altText={imageAltText}
         paragraphText={texteParagraph}
       />
-      <div>
+      <div className="deroulantAbout">
         {valeurs.map((valeur, index) => (
           <Deroulant
             key={index}

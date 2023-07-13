@@ -9,7 +9,7 @@ const texteParagraph = "Chez vous, partout et ailleurs";
 
 function Home() {
   return (
-    <div className="pages__body">
+    <div className="main">
       <Banner
         imgSrc={bannerImageSource}
         altText={imageAltText}

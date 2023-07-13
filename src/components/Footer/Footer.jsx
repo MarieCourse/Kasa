@@ -1,12 +1,12 @@
 import React from "react";
 import "./Footer.sass";
-import footerDesktop from "../../assets/footer desktop.png";
-import footerMobile from "../../assets/footer mobile.png";
+import logo from "../../assets/logo footer.png";
 
 function Footer() {
   return (
-    <div className="footer__banner">
-      <img src={footerDesktop} alt="footer" />
+    <div className="footer">
+      <img src={logo} alt="footer" />
+      <p>© 2020 Kasa. All rights reserved</p>
     </div>
   );
 }

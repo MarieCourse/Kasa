@@ -1,3 +1,9 @@
+html, body, #root
+  height: 100%
+
+html
+  font-size: 16px
+
 body
   margin: 0
   font-family: "Montserrat", sans-serif
@@ -5,19 +11,30 @@ body
   -moz-osx-font-smoothing: grayscale
   max-width: 1440px
   width: 100%
-  margin: 30px auto
   margin-bottom: 0
   font-weight: 500
 
-.pages__body
-  width: 90%
-  margin: auto
+  #root
+    display: flex
+    flex-direction: column
+
+    .main
+      width: 90%
+      margin: auto
+      flex-grow: 1
+      display: flex
+      flex-direction: column
 
 a
   text-decoration: none
 
-a:visited
-  color: currentColor
-
 ul
   list-style: none
+
+@media (max-width: 991px)
+  html
+    font-size: 14px
+
+@media (max-width: 767px)
+  html
+    font-size: 8px

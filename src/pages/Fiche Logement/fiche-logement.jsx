@@ -27,7 +27,7 @@ function FicheLogement() {
   } = selectedLogement;
 
   return (
-    <div className="pages__body" key={id}>
+    <div className="main" key={id}>
       <Carousel pictures={pictures} />
       <div className="fiche__section1">
         <div className="fiche__section1A">

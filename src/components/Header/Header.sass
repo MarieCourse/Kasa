@@ -1,24 +1,35 @@
 .header
     display: flex
     width: 90%
-    margin: auto
+    margin: 30px auto
     height: 68px
     align-items: center
     justify-content: space-between
-    margin-bottom: 40px
 
-    .header__logo
+    &__logo
         height: 100%
 
-    .header__nav
+    &__nav
         display: flex
+        gap: 20px
 
-        .header__nav__link
+        &__link
             color: #FF6060
             font-weight: 500
-            font-size: 24px
+            font-size: 1.5rem
             text-align: right
             width: 136px
 
 .active
     text-decoration: underline
+
+@media (max-width: 767px)
+    .header
+        margin: 20px auto
+
+        &__logo
+            width: 40%
+
+        &__nav__link
+            text-transform: uppercase
+            width: 66px
