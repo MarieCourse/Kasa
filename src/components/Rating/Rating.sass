@@ -1,5 +1,6 @@
 .rating
     display: flex
+    flex-direction: row
     flex-wrap: nowrap
     gap: 8px
     padding: 5px
@@ -7,3 +8,10 @@
     img
         height: 24px
         width: auto
+
+@media (max-width: 767px)
+    .rating
+        gap: 5px
+
+        img
+            height: 18px
