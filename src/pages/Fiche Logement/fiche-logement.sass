@@ -1,29 +1,37 @@
-.fiche__section1, .fiche__section2
+.fiche__section1, .fiche__section2, .informations
     display: flex
-    justify-content: space-between
     flex-direction: row
+    justify-content: space-between
+
+.fiche__section1
+    margin-bottom: 20px
+    min-height: 130px
+    justify-content: space-between
+
+    .fiche__section1A, .fiche__section1B
+        display: flex
+        flex-direction: column
+        justify-content: space-between
 
 .informations
-    display: flex
-    flex-direction: row
     gap: 20px
     margin-top: 10px
 
     > div
-        width: 50%
+        width: 47%
+
+@media (max-width: 991px)
+    .fiche__section1
+        flex-direction: column
+        margin-bottom: 0
+        .fiche__section1B
+            flex-direction: row-reverse
+            align-items: center
+
+    .informations
+        flex-direction: column
+
+        > div
+            width: 100%
 
 @media (max-width: 767px)
-.fiche__section1
-    flex-direction: column
-
-    .fiche__section1B
-        display: flex
-        flex-direction: row-reverse
-        justify-content: space-between
-        align-items: center
-
-.informations
-    flex-direction: column
-
-    > div
-        width: 100%

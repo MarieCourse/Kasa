@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ReactComponent as PreviousIcone } from "../../assets/prev.svg";
-import { ReactComponent as NextIcone } from "../../assets/next.svg";
+import previousIcone from "../../assets/prev.svg";
+import nextIcone from "../../assets/next.svg";
 import "./Carousel.sass";
 
 function Carousel({ pictures }) {
@@ -22,10 +22,10 @@ function Carousel({ pictures }) {
       {pictures.length > 1 && (
         <div>
           <button onClick={previousImage} className="carousel__previous">
-            <PreviousIcone />
+            <img src={previousIcone} alt="" />
           </button>
           <button onClick={nextImage} className="carousel__next">
-            <NextIcone />
+            <img src={nextIcone} alt="" />
           </button>
           <p>{`${currentIndex + 1}/${pictures.length}`}</p>
         </div>

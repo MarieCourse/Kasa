@@ -1,37 +1,6 @@
 .deroulant
     border-radius: 10px
-
-    h4, p, ul
-        margin: 0
-        font-weight: 400
-        width: 100%
-    h4
-        color: white
-        background-color: #FF6060
-        border-radius: 10px
-        padding: 10px
-        font-size: 1.5rem
-        text-align: left
-        line-height: 20px
-
-    p, ul
-        width: calc(100% - 40px)
-        right: -100%
-        visibility: hidden
-        max-height: 0
-
-    .showContent
-        color: #FF6060
-        line-height: 1.5
-        padding: 20px
-        border-radius: 0 0 10px 10px
-        background-color: #F6F6F6
-        right: 0
-        visibility: visible
-        color: #FF6060
-        line-height: 1.5
-        max-height: 500px
-        transition: max-height 0.8s ease
+    font-weight: 400
 
     > div
         display: flex
@@ -39,21 +8,72 @@
         position: relative
         align-items: center
         justify-content: space-between
+        h4
+            margin: 0
+            font-weight: 400
+            width: 100%
+            color: white
+            background-color: #FF6060
+            border-radius: 10px
+            font-size: 1.5rem
+            text-align: left
+            line-height: 34px
+            padding: 10px
 
-    button
-        background: none
-        border: none
-        cursor: pointer
-        position: absolute
-        left: 90%
+        button
+            background: none
+            border: none
+            cursor: pointer
+            position: absolute
+            left: 91%
 
-    .rotate
-        transform: rotate(180deg)
+        .rotate
+            transform: rotate(180deg)
+
+        .img-button
+            transition: 0.3s ease
+
+    .content-parent
+        max-height: 0px
+        overflow: hidden
+        transition: max-height 0.5s ease
+
+        &.open
+            max-height: 1000px
+
+        .content
+            color: #FF6060
+            line-height: 1.5
+            border-radius: 0 0 10px 10px
+            background-color: #F6F6F6
+            font-size: 1.125rem
+            padding: 20px
+            margin: 0
+            width: 100%
+
+            p, ul
+                padding: 0
+                margin: 0
+
+@media (max-width: 1023px)
+    .deroulant
+        button
+            left: 92%
 
 @media (max-width: 767px)
-.deroulant
-    > div h4
-        font-size: 1.625rem
+    .deroulant
+        > div
+            h4
+                line-height: 13px
+                font-size: 1.625rem
 
-    p
-        font-size: 1.5rem
+            button
+                left: 89%
+
+                .img-button
+                    width: 16px
+
+        .content-parent
+            .content
+                font-size: 1.5rem
+                padding: 10px
