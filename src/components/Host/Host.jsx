@@ -13,7 +13,7 @@ function Host({ name, portrait }) {
         <br />
         {lastName}
       </p>
-      <img src={portrait} alt="" />
+      <img src={portrait} alt={name} />
     </div>
   );
 }

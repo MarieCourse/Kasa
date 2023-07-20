@@ -1,4 +1,5 @@
 import React from "react";
+import "./fiche-logement.sass";
 import { useParams } from "react-router-dom";
 import logementsData from "../../datas/logements.json";
 import Carousel from "../../components/Carousel/Carousel";
@@ -6,7 +7,6 @@ import FicheTitle from "../../components/FicheTitle/FicheTitle";
 import Tag from "../../components/Tag/Tag";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
-import "./fiche-logement.sass";
 import Deroulant from "../../components/Deroulant/Deroulant";
 
 function FicheLogement() {
@@ -28,7 +28,7 @@ function FicheLogement() {
 
   return (
     <div className="main" key={id}>
-      <Carousel pictures={pictures} />
+      <Carousel pictures={pictures} alt={`${title}, ${location}`} />
       <div className="fiche__section1">
         <div className="fiche__section1A">
           <FicheTitle title={title} location={location} />

@@ -3,7 +3,7 @@ import previousIcone from "../../assets/prev.svg";
 import nextIcone from "../../assets/next.svg";
 import "./Carousel.sass";
 
-function Carousel({ pictures }) {
+function Carousel({ pictures, alt }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const previousImage = () => {
     setCurrentIndex((prevIndex) =>
@@ -18,14 +18,18 @@ function Carousel({ pictures }) {
 
   return (
     <div className="carousel">
-      <img src={pictures[currentIndex]} alt="" className="carousel__active" />
+      <img
+        src={pictures[currentIndex]}
+        alt={alt}
+        className="carousel__active"
+      />
       {pictures.length > 1 && (
         <div>
           <button onClick={previousImage} className="carousel__previous">
-            <img src={previousIcone} alt="" />
+            <img src={previousIcone} alt="Icone flèche gauche" />
           </button>
           <button onClick={nextImage} className="carousel__next">
-            <img src={nextIcone} alt="" />
+            <img src={nextIcone} alt="Icone flèche droite" />
           </button>
           <p>{`${currentIndex + 1}/${pictures.length}`}</p>
         </div>
