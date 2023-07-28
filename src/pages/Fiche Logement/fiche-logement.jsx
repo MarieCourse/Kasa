@@ -10,11 +10,13 @@ import Rating from "../../components/Rating/Rating";
 import Deroulant from "../../components/Deroulant/Deroulant";
 
 function FicheLogement() {
-  // Recuperation de l'id sur la URL
+  // Récuperation de l'id sur la URL
   const { id } = useParams();
 
+  //Récupération de données depuis le fichier JSON grâce à l'ID du logement sélectionné.
   const selectedLogement = logementsData.find((logement) => logement.id === id);
 
+  // Déstructuration d'objets pour extraire les propriétés individuelles de l'objet.
   const {
     title,
     location,
