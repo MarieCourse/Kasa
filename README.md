@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Kasa - Creation of a real estate rental web application with React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
 
-## Available Scripts
+- [Overview](#overview)
+  - [The mission](#the-mission)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Projet Launch](#projet-launch)
+- [Author](#author)
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+Project Mission during my training at OpenClassrooms.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The mission
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+As a front-end developer for a new real estate rental platform, I was responsible for initiating the React project and developing the entire application, including creating React components and routes with React Router, following the models provided to guarantee faithful and efficient implementation.
 
-### `npm test`
+### Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](./kasa-screenshot.png)
 
-### `npm run build`
+### Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Solution URL: [Code on Github](https://github.com/MarieCourse/kasa)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `npm run eject`
+- Javascript
+- Create React App
+- Sass
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### What I learned
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+During this project, I learned how to develop an attractive web interface using Sass for style management, which brought a modern aesthetic to the site. Additionally, I implemented CSS animations to improve the user experience and make the site more interactive. By developing elements of the website interface using React components, I learned how to effectively structure the code and make it modular.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This skill proved to be essential for maintaining the project and adding new features efficiently. Overall, this project allowed me to learn a complete set of front-end development skills, from creating the user interface to implementing complex features, and these skills will be a valuable asset to my future career in the field of web development.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Useful resources
 
-## Learn More
+- [Create React App](https://create-react-app.dev/docs/getting-started/) - Create React App Official documentation. CRA is an officially supported way to create single-page React applications. It offers a modern build setup with no configuration.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Projet Launch
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the repo
 
-### Code Splitting
+```
+git clone https://github.com/MarieCourse/kasa
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open a new terminal :
 
-### Analyzing the Bundle Size
+1.Install NPM packages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm install
+```
 
-### Making a Progressive Web App
+2.Start the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+npm start
+```
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Maria Carrera
 
-### Deployment
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-9cf?style=for-the-badge&logo=appveyor)](https://mariecourse.github.io/portfolio/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/maria-carrera-france/)
